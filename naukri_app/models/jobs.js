@@ -1,12 +1,16 @@
 const mongoose=require('mongoose');
 const JobsSchema=mongoose.Schema({
 
-job_location:
-{
 
-    type:String,
-    require:true
-},
+
+    
+name:
+    {
+
+        type:String,
+        required:true
+    },
+
 
 job_type:{
 
@@ -14,8 +18,33 @@ job_type:{
     required:true
 },
 
+position:
+{
 
 
+    type:String,
+    required:true
+},
+
+
+
+salary:
+{
+
+    type:String,
+    required:true
+},
+
+location: {
+    long: {
+        type: Number,
+        default : 28.4595},
+
+
+    lat: {
+        type: Number,
+        default : 77.0266}
+}
 
 });
 

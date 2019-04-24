@@ -3,7 +3,30 @@ const ApplySchema=mongoose.Schema({
 
 
 
- apply_for :
+name_of_applicant:
+{
+
+
+    type:String,
+    required:true
+},
+
+
+job_id:
+{
+
+    type:String,
+    required:true
+},
+user_id:
+{
+
+
+    type:String,
+    required:true
+},
+
+ apply_post:
 {
 
     type:String,
@@ -14,7 +37,7 @@ apply_date:
 {
 
     type:String,
-    require:true
+    required:true
 
 
 }

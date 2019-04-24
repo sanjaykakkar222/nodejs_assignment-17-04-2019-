@@ -2,20 +2,14 @@ const mongoose=require('mongoose');
 const UserSchema=mongoose.Schema({
 
 
-
     
-
-    user_type:
+ user_type:
     {
 
         type:Number,
         required:true
 
     },
-
-    
-   
-
 first_name:
 {
 
@@ -35,10 +29,22 @@ phone:{
     required:true
 },
 
-location:{
+
+
+email:
+{
 
     type:String,
     required:true
+},
+location: {
+    long: {
+        type: Number,
+        default : 28.4595},
+
+    lat: {
+        type: Number,
+        default : 77.0266}
 }
 
 
